@@ -13,8 +13,8 @@ ingredients = JSON.parse(open(url).read)
 ingredients["drinks"].each do |ingredient|
   i = Ingredient.create(name: ingredient["strIngredient1"])
   puts "create #{i.name}"
-
-
+  
+  
 
 
   
