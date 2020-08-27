@@ -24,7 +24,7 @@ gem 'font-awesome-sass', '~> 5.12.0'
 # Use Active Model has_secure_password
 gem 'simple_form'
 # gem 'bcrypt', '~> 3.1.7'
-
+gem 'cloudinary', '~> 1.16.0'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 gem 'dotenv-rails', groups: [:development, :test]
