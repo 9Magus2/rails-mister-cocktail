@@ -1,6 +1,8 @@
 <%= simple_form_for @cocktail do |f| %>
   <%= f.input :name %>
+  <%= f.input :photo, as: :file %>
   <%= f.button :submit, class: "btn btn-primary" %>
 <% end %>
-<p>   </p>
+
 <%= link_to 'Back', cocktails_path(@cocktail), class: "btn btn-primary" %>
+
