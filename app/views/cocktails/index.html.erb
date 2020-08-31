@@ -1,9 +1,15 @@
-<div class="card" style="width: 100%">
-<h><strong>Cocktails</strong></h1>
+<nav class="navbar-lewagon">
+<%= render 'shared/navbar' %>
+<%= link_to 'Create a cocktail', new_cocktail_path(@cocktail), class: "btn btn-primary" %>
+</nav>
+<div class="banner">
+<div class="banner-content">
+<h1><strong>Cocktails</strong></h1>
 <ul>
   <% @cocktails.each do |cocktail| %>
     <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
   <% end %>
 </ul>
-<%= link_to 'Create a cocktail', new_cocktail_path(@cocktail), class: "btn btn-primary" %>
 </div>
+</div>
+
